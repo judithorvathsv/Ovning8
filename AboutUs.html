@@ -1,0 +1,545 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <title>About US</title>
+
+  <style>
+    /*************logo image up with text**************************************/
+    .KaffeCompanyImage {
+      height: 100%;
+      max-height: 78px;
+      width: auto;
+    }
+
+    .logoText {
+      text-align: left;
+    }
+
+    #headerRow {
+      max-width: 750px;
+    }
+
+    /*************navigation bar**************************************/
+
+    .list {
+      text-align: center;
+    }
+
+    .list a {
+      margin: 10px;
+      border-radius: 5px 25px;
+      display: inline-block;
+      grid-template-columns: 100px 100px 100px;
+    }
+
+    a {
+      background-color: saddlebrown;
+            color: rosybrown;         
+    }
+
+    /*************history section**************************************/
+
+    .title {
+      font-family: Monotype Corsiva, Times, Serif;
+      font-size: xx-large;
+    }
+
+    .responsive {
+      width: 15%;
+      height: auto;
+    }
+
+
+
+
+
+    body {
+      margin: 5px;
+      background-color: rgb(223, 149, 97);
+    }
+
+
+
+
+    /*************leader section**************************************/
+
+    #leaderRow {
+      max-width: 600px;
+    }
+
+    .leadersOnPicture {
+      max-height: 100px;
+    }
+
+    .nextLeader {
+      text-align: left;
+      padding-left: 15px;
+    }
+
+
+
+
+    /***************************************************/
+
+    .myfooter {
+      padding-top: 20px;
+      padding-left: 5px;
+    }
+
+    .center {
+      display: table;
+      width: 100%;
+    }
+
+    #social {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    #social ul {
+      text-align: center;
+      padding-left: 0px;
+      margin: 0 auto;
+    }
+
+    #social li {
+      display: inline-block;
+      list-style-type: none;
+      margin-left: 30px;
+    }
+
+    /** Facebook **/
+
+    .facebook {
+      width: 50px;
+      height: 50px;
+    }
+
+    .facebook .border {
+      background: transparent;
+      outline: none;
+      color: black;
+      width: 50px;
+      height: 50px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+      border: 2px solid black;
+      transition: all .2s ease-in-out;
+    }
+
+    .facebook .border:hover {
+      background: #3b5998;
+      border-color: #436aaf;
+      color: black;
+      transform: scale(1.2);
+    }
+
+    .fa.fa-facebook {
+      font-size: 25px;
+    }
+
+    /** Twitter **/
+
+    .twitter {
+      width: 50px;
+      height: 50px;
+    }
+
+    .twitter .border {
+      background: transparent;
+      outline: none;
+      color: black;
+      width: 50px;
+      height: 50px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+      border: 2px solid black;
+      transition: all .2s ease-in-out;
+    }
+
+    .twitter .border:hover {
+      background: #00aced;
+      border-color: #72c6e6;
+      color: black;
+      transform: scale(1.2);
+    }
+
+    .fa.fa-twitter {
+      font-size: 25px;
+    }
+
+    /** Instagram **/
+
+    .instagram {
+      width: 50px;
+      height: 50px;
+    }
+
+    .instagram .border {
+      background: transparent;
+      outline: none;
+      color: black;
+      width: 50px;
+      height: 50px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+      border: 2px solid black;
+      transition: all .2s ease-in-out;
+    }
+
+    .instagram .border:hover {
+      background: #517fa4;
+      border-color: #7495af;
+      color: black;
+      transform: scale(1.2);
+    }
+
+    .fa.fa-instagram {
+      font-size: 25px;
+    }
+
+    /** dribbble **/
+
+    .dribbble {
+      width: 50px;
+      height: 50px;
+    }
+
+    .dribbble .border {
+      background: transparent;
+      outline: none;
+      color: black;
+      width: 50px;
+      height: 50px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+      border: 2px solid black;
+      transition: all .2s ease-in-out;
+    }
+
+    .dribbble .border:hover {
+      background: #ea4c89;
+      border-color: #ff78ac;
+      color: black;
+      transform: scale(1.2);
+    }
+
+    .fa.fa-dribbble {
+      font-size: 25px;
+    }
+
+    #social ul li {
+      transition: ease .3s;
+    }
+
+    #social ul:hover>li {
+      opacity: 0.5;
+    }
+
+    #social ul:hover>li:hover {
+      opacity: 1;
+    }
+
+    /***************************************************/
+
+
+
+
+    .FooterSection {
+      background-color: rgb(145, 71, 18);
+      border-top: 5px solid black;
+    }
+
+    .footerHead {
+      background-color: rgb(145, 71, 18);
+    }
+
+    .underFooterHead {
+      background-color: rgb(145, 71, 18);
+    }
+  </style>
+
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+
+
+
+  <!-- responsive Header ----------------------------------------->
+
+
+  <div class="container-fluid picture">
+
+    <div class="row" id="headerRow">
+
+
+      <div class="col">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.tSySBh8Q5_Ki917OBAcjTAHaEK%26pid%3DApi&f=1"
+          class="KaffeCompanyImage" alt="companyLogoPicture" />
+      </div>
+
+
+      <div class="row2">
+        <h1>Kaffeparty AB</h1>
+        <p> We can be your choice if you want coffee, coffe makers or the best coffee party! </p>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- responsive navigation links----------------------------------------->
+
+  <hr>
+
+  <nav class="list">
+    <a class="nav-link active" href="Index2.html">Main Menu</a>
+    <a class="nav-link" href="Products.html">Products</a>
+    <a class="nav-link disabled" href="AboutUs.html" tabindex="-1" aria-disabled="true">About us</a>
+  </nav>
+
+  <hr>
+
+
+
+  <!-- company history----------------------------------------->
+  <div>
+    <br />
+    <p class="title"> Kaffeparty history: </p>
+
+    <div class="media">
+      <div class="media-body">
+
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum. <br />
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum. <br />
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum. <br />
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum. <br />
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.
+        </p>
+      </div>
+      <img
+        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.nd33zbF7jKAxCaS94ioSQwAAAA%26pid%3DApi&f=1"
+        class="responsive" alt="coffee">
+    </div>
+
+
+    <hr>
+  </div>
+
+
+  <!-- Section: leaders---------->
+  <br />
+  <p class="title">     Our leaders:  </p>
+
+  <!------ VD ---------->
+
+
+  <div class="container-fluid picture">
+
+    <div class="row" id="leaderRow">
+
+      <div class="col">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Al_Bundy_%28Ed_O%27Neill%29.jpg/250px-Al_Bundy_%28Ed_O%27Neill%29.jpg"
+          class="leadersOnPicture" alt="Vd info">
+
+        <div class="media-body">
+          <h5 class="mt-0">CEO</h5>
+          <p class="leaderInfo"> Al Bundy<br />
+            Telephone: 123-456-789 <br />
+            Email: albundy@kaffeeparty.com
+          </p>
+        </div>
+
+      </div>
+
+ 
+
+      <!------ HR ---------->
+
+      <div class="nextLeader">
+        <img src="https://www.toponeliners.com/images/peggy-bundy/peggy-bundy-j1e.jpg" class="leadersOnPicture"
+          alt="HR info">
+
+
+        <div class="media-body">
+          <h5 class="mt-0">HR chef</h5>
+          <p class="leaderInfo">Peggy Bundy<br />
+            Telephone: 123-456-789 <br />
+            Email: peggy.bundy@kaffeeparty.com
+          </p>
+        </div>
+
+
+      </div>
+
+
+    </div>   
+    </div>
+
+
+    <br />
+    <br />
+
+
+
+
+
+
+
+
+
+    <!------------- Section: footer ----------------------------->
+    <footer class="FooterSection">
+
+      <section class="myfooter">
+
+        <!------------- social media ----------------------------->
+        <div class=" d-lg-block">
+          <h6 class="text-uppercase bold m-2 ">Get connected with us:</h6>
+        </div>
+
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+        <div class="center">
+          <div id="social">
+            <ul>
+              <li class="facebook">
+                <button class="border"><i class="fa fa-facebook"></i></button>
+              </li>
+
+              <li class="twitter">
+                <button class="border"><i class="fa fa-twitter"></i></button>
+              </li>
+
+              <li class="instagram">
+                <button class="border"><i class="fa fa-instagram"></i></button>
+              </li>
+
+              <li class="dribbble">
+                <button class="border"><i class="fa fa-dribbble"></i></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!------------- company name ----------------------------->
+      <section class="footerMainSection">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-3">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Kaffeparty AB
+              </h6>
+            </div>
+
+    
+
+
+            <!------------- products ----------------------------->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-3">
+              <h6 class="text-uppercase fw-bold mb-4"> Products </h6>
+              <p> <a href="Products.html#coffee" class="text-reset">Coffee</a> </p>
+              <p> <a href="Products.html#coffeeMaker" class="text-reset">Coffee Makers</a> </p>
+              <p> <a href="CoffeeParties.html" class="text-reset">Coffee parties</a> </p>
+            </div>
+
+
+            <!------------- opening hours ----------------------------->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-3">
+              <h6 class="text-uppercase fw-bold mb-4"> Opening Hours </h6>
+              <p id="openingHours">
+                Monday-Friday:<br /> 9:00 - 21:00<br />
+                Saturday-Sunday:<br /> 11:00 - 21:00<br />
+                Reservation number: 123-456-789
+              </p>
+            </div>
+
+
+            <!------------- contacts ----------------------------->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-3">
+              <h6 class="text-uppercase fw-bold mb-4"> Contact </h6>
+              <p><i style="font-size:20px" class="fa">&#xf015;</i> Stockholm, 12 123, Sweden</p>
+              <p>
+                <i style="font-size:15px" class="fa">&#xf0e0;</i>
+                info@kaffeeparty.com
+              </p>
+              <p><i style="font-size:24px" class="fa">&#xf10b;</i> + 46 234 567 88</p>
+              <p><i style="font-size:24px" class="fa">&#xf10b;</i> + 46 234 567 89</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <hr>
+      <!------------- copyright + webmaster ----------------------------->
+      <div class="text-center p-4">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="Index2.html">KaffepartyAB.com</a>
+        <p> <small> Webmaster: Judit Horvath </small> </p>
+      </div>
+    </footer>
+
+
+</body>
+
+</html>
