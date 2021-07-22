@@ -13,20 +13,25 @@
 
     <style>
         /*************logo image up with text**************************************/
-        .KaffeCompanyImage {
-            height: 100%;
-            max-height: 78px;
-            width: auto;
-        }
-
-        .logoText {
-            text-align: left;
+         #logo {
+            text-align: left;   
+            margin-left: 15px;
         }
 
         #headerRow {
             max-width: 750px;
         }
 
+        #logo row1 {
+            display: inline-block;                    
+        }
+        
+        .KaffeCompanyImage {
+            height: 100%;
+            max-height: 78px;
+            width: auto;
+            margin-right: 34px;   
+        }
 
 
         /*************navigation bar**************************************/
@@ -153,22 +158,21 @@
     <!-- responsive Header ----------------------------------------->
 
 
-    <div class="container-fluid picture">
+    <div id="logo" class="container-fluid picture">
 
         <div class="row" id="headerRow">
-            <div class="col">
+
+            <div class="row1">
                 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.tSySBh8Q5_Ki917OBAcjTAHaEK%26pid%3DApi&f=1"
                     class="KaffeCompanyImage" alt="companyLogoPicture" />
             </div>
-
-
-            <div class="logoText">
+            <div class="row1">
                 <h1>Kaffeparty AB</h1>
                 <p> We can be your choice if you want coffee, coffe makers or the best coffee party! </p>
             </div>
-
-
+       
         </div>
+
     </div>
 
 
