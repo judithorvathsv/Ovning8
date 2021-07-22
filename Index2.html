@@ -1,253 +1,1185 @@
 <!doctype html>
-<html>
+<html lang="la">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-
-  <title>Index</title>
-  <style>
-     /*************logo image up with text**************************************/
-    .KaffeCompanyImage {
-      height: 100%;
-      max-height: 78px;
-      width: auto;
-    }
-
-    .logoText {
-      text-align: left;
-    }
-
-    #headerRow {
-      max-width: 750px;
-    }
+    <title>Products</title>
 
 
 
+    <style>
+        /*************logo image up with text**************************************/
 
-/*************navigation bar**************************************/
-    .list {
-      text-align: center;
-    }
+        #logo {
+            text-align: left;
+            margin-left: 15px;
+        }
 
-    .list a {
-      margin: 10px;
-      border-radius: 5px 25px;
-      display: inline-block;
-      grid-template-columns: 100px 100px 100px;
-    }
+        #headerRow {
+            max-width: 750px;
+        }
 
-    a {
-      background-color: saddlebrown;
-            color: rosybrown;            
-    }
+        #logo row1 {
+            display: inline-block;
+            text-align: left;
+        }
 
-
-
-
-
-
-    body {
-      margin: 5px;
-      background-color: rgb(223, 149, 97);
-    }
-
-  
-/************* pictures to the text **************************************/
-
-    .responsive {
-      padding-top: 45px;
-      width: 15%;
-      height: auto;
-
-    }
-
-
-  /************* opening hours **************************************/
-
-    .col-lg-4 {
-      margin-right: auto;
-      margin-left: auto;
-    }
-    p#openingHours {
-      padding: 20px;
-      text-align: center;
-    }
-    legend {
-      width: 200px;
-    }
+        .KaffeCompanyImage {
+            height: 100%;
+            max-height: 78px;
+            width: auto;
+            margin-right: 34px;
+        }
 
 
 
+        /*************navigation bar**************************************/
+
+        .list {
+            text-align: center;
+            margin-right: 40px;
+        }
+
+        .list a {
+            margin: 10px;
+            border-radius: 5px 25px;
+            display: inline-block;
+            grid-template-columns: 100px 100px 100px;
+        }
+
+        a {
+            background-color: saddlebrown;
+            color: #ffa369;
+        }
+
+        a:hover {
+            color: white;
+            text-decoration: none;
+        }
 
 
-  </style>
+        /************* search row **************************************/
+
+
+
+        .searchBar {             
+            float: right;
+        }
+
+        #searchInput {
+          
+        }
+
+        .search {
+            margin: 10px;
+            display: inline-block;
+        }
+
+        #searchInput {
+            color: saddlebrown;
+            background-color: rgb(223, 149, 97);
+            border-color: saddlebrown;
+            border: 2px solid;
+        }
+
+        #searchButton {
+            background-color: saddlebrown;
+            border-color: saddlebrown;
+            color: #ffa369;
+        }
+
+        #searchButton:hover {
+            background: saddlebrown;
+            color: #fff;
+        }
+
+        #myLoginForm {
+            padding-top: 15px;
+            animation: mymove 4.7s infinite;
+        }
+
+
+        /*************************************  LOGIN  ****************************************************/
+
+
+        form {
+            position: relative;
+            width: 250px;
+            background: saddlebrown;
+            transition: all 300ms ease-in;
+            overflow: hidden;
+            border-color: saddlebrown;
+            border-radius: 5px;
+
+        }
+
+        form label.tab_label {
+            float: left;
+            color: #ffa369;
+            padding-top: 10px;
+            text-align: center;
+            width: 30%;
+            transition: all 300ms ease-in;
+            cursor: pointer;
+        }
+
+        form label.tab_label:hover,
+        form input[type="radio"]:checked+label.tab_label {
+            background: saddlebrown;
+            color: #fff;
+        }
+
+        form input[id="login"]:checked~figure.reveal_login,
+        form input[id="signup"]:checked~figure.reveal_signin {
+            background: rgb(223, 149, 97);
+            height: initial;
+            padding: 3em;
+            z-index: 10000000;
+        }
+
+        form input[type="radio"] {
+            display: none;
+        }
+
+        figure {
+            float: left;
+            width: 100%;
+            height: 0px;
+            transition: all 500ms cubic-bezier(0, 0, 0.4, 1.61);
+        }
+
+        figure p {
+            color: saddlebrown;
+        }
+
+        figure input {
+            float: left;
+            margin-top: 1em;
+        }
+
+        figure input:focus {
+            outline: 0;
+        }
+
+        figure input::-webkit-input-placeholder {
+            color: rgba(255, 163, 105, .7);
+        }
+
+        figure input[type="text"],
+        figure input[type="password"] {
+            width: 100%;
+            padding: .5em;
+            border: 3px solid saddlebrown;
+            color: saddlebrown;
+        }
+
+        figure input[type="submit"] {
+            float: right;
+            background: saddlebrown;
+            border: 3px solid saddlebrown;
+            width: 50%;
+            text-transform: uppercase;
+            color: rgb(223, 149, 97);
+            font-size: 1em;
+            line-height: 1.6em;
+            transition: all 300ms ease-in;
+        }
+
+        figure input[type="submit"]:hover {
+            color: white;
+        }
+
+        figure input[type="checkbox"] {
+            margin-top: 1.2em;
+        }
+
+        figure label.content_label {
+            float: left;
+            font-size: .7em;
+            line-height: 2em;
+            margin-top: 1.2em;
+            margin-left: .4em;
+        }
+
+        .icon {
+            position: absolute;
+            left: 10px;
+            top: 1.4em;
+            color: saddlebrown;
+        }
+
+
+
+
+
+
+        /************* body **************************************/
+
+        body {
+            margin: 5px;
+            background-color: rgb(223, 149, 97);
+        }
+
+
+
+        /************* the 3 production to choose **************************************/
+
+        .ourProducts {
+            text-align: center;
+            margin-top: 150px;
+        }
+
+        .coffeeProductText {
+            float: none;
+            margin-top: 50px;
+        }
+
+        .choosingFromThreeProductPicture {
+            height: 170px;         
+            display: block;
+            margin-top: 5px;
+            animation: mymove 4.7s infinite;
+        }
+
+        .rightChoosingFromThreeProductPicture {
+            margin-left: 8px;
+        }     
+
+        .colThreeProducts {
+            min-width: 300px;
+            max-width: 450px;
+            margin: 15px;
+            background-color: rgb(223, 149, 97);
+            padding-left: 50px;
+        }
+
+        @keyframes mymove {
+            50% {
+                box-shadow: 10px 20px 30px saddlebrown;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+        /************* grid and content **************************************/
+
+
+        h2 {
+            text-align: left;
+            margin-top: 30px;
+        }
+
+
+.productCol{
+    min-width: 300px;
+            max-width: 450px;
+            margin: 15px;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 5px 18px 0 rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+}
+
+        .choosingPicture {
+            max-height: 180px;           
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5px
+        }
+
+        .price {
+            font-weight: bold;
+        }
+
+        .input {
+            background-color: rgb(223, 149, 97);
+            width: 150px;
+            border-color: saddlebrown;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .getstarted-button {
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+ 
+
+        /*************go up button**************************************/
+
+        .ToTheTopOfThisPageButton {
+            font-size: 100%;
+            background-color: saddlebrown;
+            border-radius: 5px 25px;
+            border-style: double;
+            border-color: saddlebrown;
+            margin-top: 30px;
+            margin-left: 45%;
+            color: #ffa369;
+            padding: 10px;
+        }
+
+
+    </style>
 
 </head>
 
 <body>
-
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"></script>
-
-
+    <a name="top"></a>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 
 
 
 
 
-  <!-- responsive Header ----------------------------------------->
+    <!-- responsive Header ----------------------------------------->
 
- 
-    <div class="container-fluid picture">
+    <div id="logo" class="container-fluid picture">
 
-      <div class="row" id="headerRow">
-        <div class="col">
-          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.tSySBh8Q5_Ki917OBAcjTAHaEK%26pid%3DApi&f=1" alt="companyLogoPicture"
-            class="KaffeCompanyImage" />
+        <div class="row" id="headerRow">
+
+            <div class="row1">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.tSySBh8Q5_Ki917OBAcjTAHaEK%26pid%3DApi&f=1"
+                    class="KaffeCompanyImage" alt="companyLogoPicture" />
+            </div>
+            <div class="row1">
+                <h1>Kaffeparty AB</h1>
+                <p> We can be your choice if you want coffee, coffe makers or the best coffee party! </p>
+            </div>
+
         </div>
 
-
-        <div class="row2">
-          <h1>Kaffeparty AB</h1>
-          <p> We can be your choice if you want coffee, coffe makers or the best coffee party! </p>
-        </div>
-
-
-      </div>
     </div>
 
-    <!-- responsive navigation links----------------------------------------->
+
 
     <hr>
 
-    <nav class="list">
-      <a class="nav-link disabled" href="Index2.html" tabindex="-1" aria-disabled="true">Main menu</a>
-      <a class="nav-link active" href="Products.html">Products</a>
-      <a class="nav-link" href="AboutUs.html">About us</a>
+    <!-- responsive navigation links----------------------------------------->
+    <nav class="list">     
+            <a class="nav-link active" href="Index2.html">Main Menu</a>
+            <a class="nav-link disabled" href="Products.html" >Products</a>
+            <a class="nav-link" href="AboutUs.html">About us</a>       
     </nav>
-
     <hr>
     <br />
 
 
 
-    <!-- TEXT--------WHO WE ARE  -------------WHAT DO WE DO-------------------->
-
-
-
-    <div class="media">
-      <div class="media-body">
-        <h5>Who are we?</h5>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          <br />
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        </p>
-        <h5>What do we do?</h5>
-        <p>
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          <br />
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-      </div>
-      <img
-        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Gn10ETVWPdVMfhrTSFkpewHaEd%26pid%3DApi&f=1"
-        class="responsive" alt="coffee maker">
-    </div>
-
-
-
-    <!-- TEXT--------WHY US  -------------COFFEE PARTY HOW IT WORKS-------------------->
-
-    <div class="media">
-      <div class="media-body">
-        <h5>Why us?</h5>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          <br />
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        </p>
-        <h5>Coffee party, how it works!</h5>
-        <p>
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          <br />
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <br />
-      </div>
-      <img
-        src="http://331mrnu3ylm2k3db3s1xd1hg.wpengine.netdna-cdn.com/wp-content/uploads/2014/06/Cafe-Imports-Sprudge-Trans-Europe-Express-Cupping-Barn-Berlin-8083.jpg"
-        class="responsive" alt="coffee party">
-    </div>
-
-
-
-    <!--------- OPENING HOURS WITH FAKE PHONE NUMBER   -------------------->
-
-
-    <div class='container'>
-      <div class="col-lg-4">
-        <fieldset class="border">
-          <legend class='text-center'>Opening hours</legend>
-          <p id="openingHours">
-            Monday-Friday: 9:00 - 21:00<br />
-            Saturday-Sunday: 11:00 - 21:00<br />
-            Reservation number: 123-456-789
-          </p>
-        </fieldset>
-      </div>
+    <!-- Search row----------------------------------------- ---------------->
+    <div class="searchBar container">
+        <div class="row">
+            <div class="search col">
+                <input class="form-control  searchRow" id="searchInput" type="search" placeholder="Search"
+                    aria-label="Search" />
+            </div>
+            <div class="search col">
+                <button class="btn btn-outline-light  searchRow" id="searchButton" type="submit">Search</button>
+            </div>
+            <div class="search col">
+                <form style="float:right" class="searchRow" id="myLoginForm">
+                    <input id="login" type="radio" name="tab" />
+                    <label class="tab_label" for="login">Log in</label>
+                    <input id="signup" type="radio" name="tab" />
+                    <label class="tab_label" for="signup">Sign up</label>
+                    <figure class="reveal_login">
+                        <p>Please log in with your account.</p>
+                        <input type="text" placeholder="user" />
+                        <input type="password" placeholder="password" />
+                        <input id="logged_in" type="checkbox" />
+                        <label class="content_label" for="logged_in">Keep me logged in</label>
+                        <input type="submit" value="Log in" />
+                    </figure>
+                    <figure class="reveal_signin">
+                        <p>You can register a new account.</p>
+                        <input type="text" placeholder="user" />
+                        <input type="password" placeholder="password" />
+                        <input type="submit" value="Sign up" />
+                    </figure>
+                </form>
+            </div>
+        </div>
     </div>
 
 
 
 
 
-    <!---------FOOTER -------------------->
+
+
+
+
+    <!-- RESPONSIVE  The three options: Coffee, Maker, Party----------------------------------------->
+    <br />
+    <br />
+    <br />
+    <h1 class="ourProducts">Our products: </h1>
+    <br />
+
+    <section class="container">
+        <section class="row">
+
+
+            <div class="colThreeProducts">
+                <a href="#coffee">
+                    <img src="https://s3.amazonaws.com/images.ecwid.com/images/30049435/1545630017.jpg"
+                        class="choosingFromThreeProductPicture" alt="CoffeePicture">
+                </a>
+                <div class="media-body">
+                    <h5 style="text-align: center;">Coffee</h5>
+                </div>
+            </div>
+
+
+
+            <div class="colThreeProducts">
+                <a href="#coffeeMaker">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Hx31QY8kHIdX-aGvnE3BDQHaEi%26pid%3DApi&f=1"
+                        class="choosingFromThreeProductPicture" alt="CoffeeMakersPicture">
+                </a>
+                <div class="media-body">
+                    <h5 style="text-align: center;">Coffee Makers</h5>
+                </div>
+            </div>
+
+
+
+            <div class="colThreeProducts">
+                <a href="CoffeeParties.html">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.7YjAyoljF_Ibni1jSqFbhwHaE8%26pid%3DApi&f=1"
+                        class="choosingFromThreeProductPicture rightChoosingFromThreeProductPicture"
+                        alt="CoffeePartyPicture">
+                </a>
+                <div class="media-body">
+                    <h5 style="text-align: center;">Coffee Party</h5>
+                </div>
+            </div>
+        </section>
+    </section>
+    <br />
+
+
+
+
+
+    <!-- Coffee for companies only  text----------------------------------------->
+
+    <hr>
+    <h2 class="coffeeProductText" id="coffee">Coffee for companies only </h2>
+    <br />
+
+
+    <!-- 1 Section: coffee bags----------------------------------------->
+    <section class="container">
+        <section class="row">
+
+
+            <div class="col productCol">
+                <img src="https://images.squarespace-cdn.com/content/v1/554a80fee4b0992a77298957/1585726660269-Z84ESZMYBDMCH9EPRP6B/Brazil+Serra+Negra+light+adjust.jpg?format=500w"
+                    class="choosingPicture" alt="CoffeePicture" /> <br />
+                <b>Brazil. </b>Rich, mellow and heavy-bodied, a microlot cream of the crop from the highlands of
+                Brazil.
+                Roaster's Choice: Vienna<br />
+                <p class="price"> &#36;27.08 </p>
+                <label class="form-label" for="productQuantity30"> Quantity: </label><br />
+                <input id="productQuantity30" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId30" type="hidden" name="product_id" value="30" />
+                <input id="productName30" type="hidden" name="product_name" value="Product30" /> <br />
+                <p class="cta" id="addit30"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+
+            <div class="col productCol">
+                <img src="https://images.squarespace-cdn.com/content/v1/554a80fee4b0992a77298957/1620817529350-3YZYKFTJNXRV1VYA85T3/Ecuador+Maputo+2021_SM.jpg?format=500w"
+                    class="choosingPicture" alt="CoffeePicture" /> <br />
+                <b>Ecuador. </b>A rare treat from the Andes, a creamy, well balanced coffee, featuring a sweet
+                aroma, notes of peach, dark plum and cardamom, with coffee candy sweetness,
+                cocoa richness and a lingering dark chocolate and plum finish. Silky, smooth and delicious,
+                everything coffee should be!
+                Roaster's Choice: City<br />
+                <p class="price"> &#36;29.93 </p>
+                <label class="form-label" for="productQuantity1"> Quantity: </label><br />
+                <input id="productQuantity1" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId1" type="hidden" name="product_id" value="1" />
+                <input id="productName1" type="hidden" name="product_name" value="Product1" /> <br />
+                <p class="cta" id="addit1"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+
+            <div class="col productCol">
+                <img src="https://images.squarespace-cdn.com/content/v1/554a80fee4b0992a77298957/1598367310041-MDFE31R72I0LK5QAT5DC/Costa+Rica+Geisha+2020+RGGeishaMicrolot.jpg?format=500w"
+                    class="choosingPicture" alt="CoffeePicture" /> <br />
+                <b>Costa Rica. </b>Lively and sweet, a rare Central American treat! Naturally processed Geisha beans
+                from a Tarrazu microlot, sweet, rich and complex, with a smooth, creamy body, candied passion fruit
+                sweetness, chocolate
+                richness and a complex lingering finish.
+                Coffee sweetens as it cools, for a gourmet iced coffee or Cold Brew.
+                Roaster's Choice: Full City<br />
+                <p class="price"> &#36;28.84 </p>
+                <label class="form-label" for="productQuantity2"> Quantity: </label><br />
+                <input id="productQuantity2" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId2" type="hidden" name="product_id" value="2" />
+                <input id="productName2" type="hidden" name="product_name" value="Product2" /> <br />
+                <p class="cta" id="addit2"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+            <div class="col productCol">
+                <img src="https://images.squarespace-cdn.com/content/v1/554a80fee4b0992a77298957/1594890322368-L32WN2C2QCL6DSAWD9BK/Guatemala+Waykan+2020+cropped+tweak.jpg?format=500w"
+                    class="choosingPicture" alt="CoffeePicture" /> <br />
+                <b>Guatemala. </b>Buttery rich coffee from Huehuetenango in the heart of Central America.
+                A smooth, balanced coffee that combines rich chocolate aromatics and butter candy sweetness with
+                lively citrus topnotes and a lingering lemon butter finish.
+                Roaster's Choice: Full City<br />
+                <p class="price"> &#36;19.58 </p>
+                <label class="form-label" for="productQuantity3"> Quantity: </label><br />
+                <input id="productQuantity3" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId3" type="hidden" name="product_id" value="3" />
+                <input id="productName3" type="hidden" name="product_name" value="Product3" /> <br />
+                <p class="cta" id="addit3"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+            <div class="col productCol">
+                <img src="https://images.squarespace-cdn.com/content/v1/554a80fee4b0992a77298957/1601545771523-S8G5T4M32MRAOW7U7KKR/OrgCongoLakeKivu2020RG.jpg?format=500w"
+                    class="choosingPicture" alt="CoffeePicture" /> <br />
+                <b>Congo. </b>A rich and lively coffee delight from the highlands overlooking Africa's Lake Kivu!
+                Roaster's Choice: City<br />
+                <p class="price"> &#36;25.20 </p>
+                <label class="form-label" for="productQuantity29"> Quantity: </label><br />
+                <input id="productQuantity29" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId29" type="hidden" name="product_id" value="29" />
+                <input id="productName29" type="hidden" name="product_name" value="Product29" /> <br />
+                <p class="cta" id="addit29"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+        </section>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- 2 Section: coffee beans without flavour-->
+    <section class="container">
+        <section class="row">
+
+
+            <div class="col productCol">
+                <img src="https://images.squarespace-cdn.com/content/v1/554a80fee4b0992a77298957/1551428003200-XH4IC5MP8Y04G3ILE8XC/MorningMist_MarchCoffeeoftheMonth.jpg?format=500w"
+                    class="choosingPicture" alt="CoffeePicture" /> <br />
+                <b>MORNING MIST : MARCH </b><br />
+                A lively, balanced coffee, sweet and smooth with lively citrus topnotes and a lingering buttery
+                finish.
+                Bright enough for breakfast, smooth enough to drink all day...or mix with whiskey for a memorable
+                Irish Coffee.
+                Roast Level: Full City <br />
+                Each roast = 600 grams green coffee. You'll receive approx. 18 oz. of roasted beans. Brews about 33
+                full (9 oz.) cups of coffee.<br />
+                <p class="price"> &#36;19.89 </p>
+                <label class="form-label" for="productQuantity4"> Quantity: </label><br />
+                <input id="productQuantity4" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId4" type="hidden" name="product_id" value="4" />
+                <input id="productName4" type="hidden" name="product_name" value="Product4" /> <br />
+                <p class="cta" id="addit4"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+
+            <div class="col productCol">
+                <img src="https://images.squarespace-cdn.com/content/v1/554a80fee4b0992a77298957/1595005236838-IK8DF6L8Z1DQKP7MXHHN/HMJ_BrownRoastTrade.jpg?format=750w"
+                    class="choosingPicture" alt="CoffeePicture" /> <br />
+                <b>MOKHA JAVA 1790 </b><br />
+                A blend of naturally processed beans from Indonesia & Northern Africa, inspired by the first coffee
+                blend served in European
+                coffee houses of the late 18th & early 19th centuries. Sweet, smooth & complex, with rich chocolate
+                notes & a hint of spice.
+                Roast Level: Vienna<br />
+                Each roast = 600 grams green coffee. You'll receive approx. 18 oz. of roasted beans. Brews about 33
+                full (9 oz.) cups of coffee.<br />
+                <p class="price"> &#36;23.80 </p>
+                <label class="form-label" for="productQuantity5"> Quantity: </label><br />
+                <input id="productQuantity5" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId5" type="hidden" name="product_id" value="5" />
+                <input id="productName5" type="hidden" name="product_name" value="Product5" /> <br />
+                <p class="cta" id="addit5"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+
+            <div class="col productCol">
+                <img src="https://images.squarespace-cdn.com/content/v1/554a80fee4b0992a77298957/1543651178912-SNK8TJICPE1K5TTVG7X5/Holiday+Spice+3.jpg?format=500w"
+                    class="choosingPicture" alt="CoffeePicture" /> <br />
+                <b>HOLIDAY SPICE : DECEMBER </b><br />
+                A silky, full bodied coffee with a sweet aroma and complex flavor: Lively fruit notes, Baker’s chocolate
+                and a hint of sweet spice.
+                Lively enough to brighten a winter breakfast and rich enough to compliment the most decadent holiday
+                dessert.
+                Roast Level: Vienna<br />
+                Each roast = 600 grams green coffee. You'll receive approx. 18 oz. of roasted beans. Brews about 33
+                full (9 oz.) cups of coffee <br />
+                <p class="price"> &#36;19.89 </p>
+                <label class="form-label" for="productQuantity6"> Quantity: </label><br />
+                <input id="productQuantity6" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId6" type="hidden" name="product_id" value="6" />
+                <input id="productName6" type="hidden" name="product_name" value="Product6" /> <br />
+                <p class="cta" id="addit6"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+        </section>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 3 Section: coffee with flavour -->
+    <section class="container">
+        <section class="row">
+
+
+            <div class="col productCol">
+                <img src="https://cdn.shopify.com/s/files/1/0358/3621/products/english-salted-toffee-reg_960x.png?v=1591714497"
+                    class="choosingPicture" alt="CoffeePicture" /> <br />
+                <b>Irresistibly Sweet with a Dash of Sea Salt</b><br />
+                There’s more to the classy lifestyle than musky cologne, rich mahogany and woolly rugs. We took a
+                break from reading our leather-bound books to indulge in one of life’s finer pleasures:
+                English toffee. We caramelized the molasses, stirred in some creamy butter, added a dash of sea salt
+                and baked the mixture until it was ready to sprinkle over our rich Arabica coffee beans.
+                This scintillating, sweet flavored coffee will make your morning mug extraordinary. Naturally and
+                artificially flavored
+                No sugar
+                Less than 5 calories per 6 ounce cup
+                100% Arabica coffee
+                Medium roast
+                Also available in decaf
+                Contains no nuts or nut derivatives, no fat and is gluten-free
+                12oz. Ground
+                <p class="price"> &#36;10.29 </p>
+                <label class="form-label" for="productQuantity7"> Quantity: </label><br />
+                <input id="productQuantity7" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId7" type="hidden" name="product_id" value="7" />
+                <input id="productName7" type="hidden" name="product_name" value="Product7" /> <br />
+                <p class="cta" id="addit7"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+
+            <div class="col productCol">
+                <img src="https://cdn.shopify.com/s/files/1/0358/3621/products/chocolate-hazelnut-reg_960x.png?v=1591713626"
+                    class="choosingPicture" alt="CoffeePicture" /> <br />
+                <b>A Chocolatey Dream of Heavenly Hazelnut </b><br />
+                Perk up, pour a cup and indulge for a little while. We captured the essence of that decadent,
+                classic dessert by baking layers of milk chocolate and delightful hazelnut flavors into our choicest
+                coffee beans. This delicious brew pairs well with your favorite morning pastry, afternoon snack or
+                after dinner treat.
+                Naturally and artificially flavored
+                No sugar
+                Less than 5 calories per 6 ounce cup
+                100% Arabica coffee
+                Medium roast
+                Available ground or whole bean
+                Also available in decaf
+                Contains no nuts or nut derivatives, no fat and is gluten-free
+                12oz. Ground
+                <p class="price"> &#36;9.24 </p>
+                <label class="form-label" for="productQuantity8"> Quantity: </label><br />
+                <input id="productQuantity8" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId8" type="hidden" name="product_id" value="8" />
+                <input id="productName8" type="hidden" name="product_name" value="Product8" /> <br />
+                <p class="cta" id="addit8"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+
+            <div class="col productCol">
+                <img src="https://cdn.shopify.com/s/files/1/0358/3621/products/sweet-vanilla-bean-reg_960x.png?v=1591715383"
+                    class="choosingPicture" alt="CoffeePicture" /> <br />
+                <b>Vanilla with a Splash of Vanilla </b><br />
+                There’s nothing vanilla about how this flavor came to fruition. We ventured far and wide in search
+                of the smoothest, richest flavor. As strong winds thrust us down a winding river, we gazed up at the
+                tall vines. And there they were, in all of their natural, beany glory. We picked and plucked the
+                perfect vanilla beans that add a hint of sweetness to round out this balanced blend before you.
+                Naturally flavored
+                No sugar
+                Less than 5 calories per 6 ounce cup
+                100% Arabica coffee
+                Medium roast
+                Contains no nuts or nut derivatives, no fat and is gluten-free
+                12oz. Ground
+                <p class="price"> &#36;10.24 </p>
+                <label class="form-label" for="productQuantity9"> Quantity: </label><br />
+                <input id="productQuantity9" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId9" type="hidden" name="product_id" value="9" />
+                <input id="productName9" type="hidden" name="product_name" value="Product9" /> <br />
+                <p class="cta" id="addit9"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+
+            <div class="col productCol">
+                <img src="https://cdn.shopify.com/s/files/1/1753/2591/products/Chocolate-Hazelnut_750x750.png?v=1491078262"
+                    class="choosingPicture" alt="CoffeePicture" /> <br />
+                <b>Chocolate Hazelnut</b><br />
+                Dreamy chocolate and rich delectable hazelnut notes make this flavored coffee from Unique Coffee
+                Roasters a integral part of your day.
+                Unique Coffee Roasters has perfected the Chocolate Hazelnut flavor so that it engulfs your senses
+                and leaves you feeling relaxed yet revitalized.
+                16oz. Ground
+                <p class="price"> &#36;12.99 </p>
+                <label class="form-label" for="productQuantity10"> Quantity: </label><br />
+                <input id="productQuantity10" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId10" type="hidden" name="product_id" value="10" />
+                <input id="productName10" type="hidden" name="product_name" value="Product10" /> <br />
+                <p class="cta" id="addit10"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+
+            <div class="col productCol">
+                <img src="https://cdn.shopify.com/s/files/1/1753/2591/products/Pumpkin-Latte_750x750.png?v=1491078877"
+                    class="choosingPicture" alt="CoffeePicture" /> <br />
+                <b>Pumpkin Latte Flavored Coffee </b><br />
+                Your preferred fall beverage can now be made in the comfort of your own home. Perfect this timeless
+                autumn latte that combines creamy pumpkin with subtly rich vanilla and just a touch of those
+                infamous spices to bring you warmth.
+                Order the Pumpkin Latte flavored coffee from Unique Coffee Roasters and bring your favorite coffee
+                beverage with you everywhere you go.
+                16oz. Ground
+                <p class="price"> &#36;12.99 </p>
+                <label class="form-label" for="productQuantity11"> Quantity: </label><br />
+                <input id="productQuantity11" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId11" type="hidden" name="product_id" value="11" />
+                <input id="productName11" type="hidden" name="product_name" value="Product11" /> <br />
+                <p class="cta" id="addit11"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+            <div class="col productCol">
+                <img src="https://cdn.shopify.com/s/files/1/1753/2591/products/Swiss-Mocha-Almond_750x750.png?v=1491079163"
+                    class="choosingPicture" alt="CoffeePicture" /> <br />
+                <b>Swiss Mocha Almond Flavored Coffee </b><br />
+                Spend a metaphorical weekend in the Alps with Unique Coffee Roasters' Swiss Mocha Almond Flavored
+                Coffee. You have never tasted anything like this before!
+                Alpine chocolate with full bodied nut flavor will hit that sweets craving while not undoing your
+                diet.
+                Not to mention, your morning cup of Joe will be completely transformed. Order today and GO YODEL!
+                16oz. Ground
+                <p class="price"> &#36;12.99 </p>
+                <label class="form-label" for="productQuantity12"> Quantity: </label><br />
+                <input id="productQuantity12" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId12" type="hidden" name="product_id" value="12" />
+                <input id="productName12" type="hidden" name="product_name" value="Product12" /> <br />
+                <p class="cta" id="addit12"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+
+            <div class="col productCol">
+                <img src="https://cdn.shopify.com/s/files/1/1753/2591/products/Cinnamon-English-Toffee_750x750.png?v=1491078351"
+                    class="choosingPicture" alt="CoffeePicture" /> <br />
+                <b>Cinnamon English Toffee Flavored Coffee </b><br />
+                Unique Coffee Roaster's Cinnamon English Toffee Flavored Coffee is made with 100% Colombian beans and
+                richly flavored with an intensely sweet and buttery appeal.
+                For that additional flavor, we have blended the beans with sweet bakery cinnamon. You will love the
+                way this simple, yet sophisticated coffee smells and tastes, not to mention, your home will feel
+                like a quaint English cottage every time you brew a pot.
+                16oz. Ground
+                <p class="price"> &#36;12.99 </p>
+                <label class="form-label" for="productQuantity13"> Quantity: </label><br />
+                <input id="productQuantity13" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId13" type="hidden" name="product_id" value="13" />
+                <input id="productName13" type="hidden" name="product_name" value="Product13" /> <br />
+                <p class="cta" id="addit13"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+        </section>
+    </section>
+
+
+
+
+
+
+
+
+    <hr>
+    <h2 class="coffeeProductText" id="coffeeMaker">Coffee Makers for companies only </h2>
+    <br />
+
+
+
+    <!-- 4 Section: coffee maker -->
+    <section class="container">
+        <section class="row">
+
+
+            <div class="col productCol">
+                <img src="https://b3h2.scene7.com/is/image/BedBathandBeyond/2020-11-05-08-39_611247386392?$imagePLP$&wid=236&hei=236"
+                    class="choosingPicture" alt="CoffeeMakerPicture" /> <br />
+                Keurig® K-Supreme Plus™ Single Serve Coffee Maker MultiStream Technology™ in Stainless Steel <br />
+                <p class="price"> &#36;189.99 </p>
+                <label class="form-label" for="productQuantity14"> Quantity: </label><br />
+                <input id="productQuantity14" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId14" type="hidden" name="product_id" value="14" />
+                <input id="productName14" type="hidden" name="product_name" value="Product14" /> <br />
+                <p class="cta" id="addit14"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+
+            <div class="col productCol">
+                <img src="https://s7d2.scene7.com/is/image/BedBathandBeyond/155995941258088p?$460$&wid=515&hei=515"
+                    class="choosingPicture" alt="CoffeeMakerPicture" /> <br />
+                Breville® The Barista Express™ Espresso Machine <br />
+                <p class="price"> &#36;699.99 </p>
+                <label class="form-label" for="productQuantity15"> Quantity: </label><br />
+                <input id="productQuantity15" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId15" type="hidden" name="product_id" value="15" />
+                <input id="productName15" type="hidden" name="product_name" value="Product15" /> <br />
+                <p class="cta" id="addit15"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+
+            <div class="col productCol">
+                <img src="https://s7d2.scene7.com/is/image/BedBathandBeyond/384225569513313p?$460$&wid=515&hei=515"
+                    class="choosingPicture" alt="CoffeeMakerPicture" /> <br />
+                Nespresso® Vertuo Next Premium Coffee & Espresso Maker by De'Longhi <br />
+                <p class="price"> &#36;169.99 </p>
+                <label class="form-label" for="productQuantity16"> Quantity: </label><br />
+                <input id="productQuantity16" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId16" type="hidden" name="product_id" value="16" />
+                <input id="productName16" type="hidden" name="product_name" value="Product16" /> <br />
+                <p class="cta" id="addit16"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+
+            <div class="col productCol">
+                <img src="https://b3h2.scene7.com/is/image/BedBathandBeyond/186102365164884p__1?$imagePLP$&wid=236&hei=236"
+                    class="choosingPicture" alt="CoffeeMakerPicture" /> <br />
+                Chantal® 28 oz. Ceramic French Press <br />
+                <p class="price"> &#36;49.99 </p>
+                <label class="form-label" for="productQuantity17"> Quantity: </label><br />
+                <input id="productQuantity17" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId17" type="hidden" name="product_id" value="17" />
+                <input id="productName17" type="hidden" name="product_name" value="Product17" /> <br />
+                <p class="cta" id="addit17"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+
+            <div class="col productCol">
+                <img src="https://b3h2.scene7.com/is/image/BedBathandBeyond/2020-08-24-13-22_085276000800_1?$imagePLP$&wid=236&hei=236"
+                    class="choosingPicture" alt="CoffeeMakerPicture" /> <br />
+                AeroPress® Coffee & Espresso Maker <br />
+                <p class="price"> &#36;29.99 </p>
+                <label class="form-label" for="productQuantity18"> Quantity: </label><br />
+                <input id="productQuantity18" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId18" type="hidden" name="product_id" value="18" />
+                <input id="productName18" type="hidden" name="product_name" value="Product18" /> <br />
+                <p class="cta" id="addit18"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+
+            <div class="col productCol">
+                <img src="https://b3h2.scene7.com/is/image/BedBathandBeyond/254631367355716p__1?$imagePLP$&wid=236&hei=236"
+                    class="choosingPicture" alt="CoffeeMakerPicture" /> <br />
+                Cuisinart® 12-Cup Thermal Coffee Maker <br />
+                <p class="price"> &#36;129.99 </p>
+                <label class="form-label" for="productQuantity19"> Quantity: </label><br />
+                <input id="productQuantity19" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId19" type="hidden" name="product_id" value="19" />
+                <input id="productName19" type="hidden" name="product_name" value="Product19" /> <br />
+                <p class="cta" id="addit19"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+
+            <div class="col productCol">
+                <img src="https://s7d2.scene7.com/is/image/BedBathandBeyond/2020-05-29-15-10_794151411708_2?$460$&wid=515&hei=515"
+                    class="choosingPicture" alt="CoffeeMakerPicture" /> <br />
+                Jura® ENA 8 Fully Automatic Coffee Machine <br />
+                <p class="price"> &#36;2,499.99 </p>
+                <label class="form-label" for="productQuantity20"> Quantity: </label><br />
+                <input id="productQuantity20" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId20" type="hidden" name="product_id" value="20" />
+                <input id="productName20" type="hidden" name="product_name" value="Product20" /> <br />
+                <p class="cta" id="addit20"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+
+            <div class="col productCol">
+                <img src="https://s7d2.scene7.com/is/image/BedBathandBeyond/37268742504054p?$460$&wid=515&hei=515"
+                    class="choosingPicture" alt="CoffeeMakerPicture" /> <br />
+                Primula® 50 oz. Cold Brew Coffee Maker <br />
+                <p class="price"> &#36;29.99 </p>
+                <label class="form-label" for="productQuantity21"> Quantity: </label><br />
+                <input id="productQuantity21" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId21" type="hidden" name="product_id" value="21" />
+                <input id="productName21" type="hidden" name="product_name" value="Product21" /> <br />
+                <p class="cta" id="addit21"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+
+            <div class="col productCol">
+                <img src="https://b3h2.scene7.com/is/image/BedBathandBeyond/96127842707004p?$imagePLP$&wid=236&hei=236"
+                    class="choosingPicture" alt="CoffeeMakerPicture" /> <br />
+                Breville® Dual Boiler™ Espresso Maker <br />
+                <p class="price"> &#36;1,499.99 </p>
+                <label class="form-label" for="productQuantity22"> Quantity: </label><br />
+                <input id="productQuantity22" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId22" type="hidden" name="product_id" value="22" />
+                <input id="productName22" type="hidden" name="product_name" value="Product22" /> <br />
+                <p class="cta" id="addit22"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+            <div class="col productCol">
+                <img src="https://s7d2.scene7.com/is/image/BedBathandBeyond/278449867929993p?$460$&wid=515&hei=515"
+                    class="choosingPicture" alt="CoffeeMakerPicture" /> <br />
+                De’Longhi La Specialista ® Dual Heating System Espresso Machine in Stainless Steel <br />
+                <p class="price"> &#36;699.99 </p>
+                <label class="form-label" for="productQuantity23"> Quantity: </label><br />
+                <input id="productQuantity23" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId23" type="hidden" name="product_id" value="23" />
+                <input id="productName23" type="hidden" name="product_name" value="Product23" /> <br />
+                <p class="cta" id="addit23"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+            <div class="col productCol">
+                <img src="https://cdnimg.webstaurantstore.com/images/products/large/318553/1609518.jpg"
+                    class="choosingPicture" alt="CoffeeMakerPicture" /> <br />
+                Bunn 44300.0201 Crescendo series espresso machine <br />
+                With the ability to produce up to 40 double shots per hour, this workhorse machine is perfect for
+                high-volume cafes,
+                coffee shops, kiosks, and restaurants that pride themselves on serving quality coffee drinks.
+                You can use this machine to create a single or double espresso shot topped with a beautiful crema,
+                or as
+                the keynote in a signature macchiato, americano, or cafe au laut.
+                <p class="price"> &#36;2,939.00 </p>
+                <label class="form-label" for="productQuantity24"> Quantity: </label><br />
+                <input id="productQuantity24" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId24" type="hidden" name="product_id" value="24" />
+                <input id="productName24" type="hidden" name="product_name" value="Product24" /> <br />
+                <p class="cta" id="addit24"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+            <div class="col productCol">
+                <img src="https://cdnimg.webstaurantstore.com/images/products/large/53076/1615186.jpg"
+                    class="choosingPicture" alt="CoffeeMakerPicture" /> <br />
+                Bunn 29250.0000 FMD-3 DBC BLK Hot Beverage Dispenser with 3 Hoppers - 120V <br />
+                The Bunn FMD-3 DBC BLK hot beverage dispenser with 3 hoppers uses an attractive lighted door to
+                appeal
+                to customers, and a convenient,
+                durable construction to appeal to you! It features variable speed motors to control product
+                consistency
+                in each mixing chamber, and boasts a high speed heavy-duty whipper for thorough product mixing.
+                To make service maintenance quick and simple, the electrical and plumbing components are easily
+                acceesible through the front and top of the machine.
+                This Bunn FMD-3 DBC BLK hot beverage dispenser with 3 hoppers requires a 120V electrical
+                connection.<br />
+                <p class="price"> &#36;1,479.00 </p>
+                <label class="form-label" for="productQuantity25"> Quantity: </label><br />
+                <input id="productQuantity25" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId25" type="hidden" name="product_id" value="25" />
+                <input id="productName25" type="hidden" name="product_name" value="Product25" /> <br />
+                <p class="cta" id="addit25"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+            <div class="col productCol">
+                <img src="https://cdnimg.webstaurantstore.com/images/products/large/169493/322531.jpg"
+                    class="choosingPicture" alt="CoffeeMakerPicture" /> <br />
+                Bunn 43500.0000 Espress B&W3 CTS Super Automatic 1L Espresso Machine with Steam Wand <br />
+                Wake customers up with a tasty shot of espresso from this Bunn 43500.0000 Espress B&W3 CTS Super
+                Automatic 1L espresso machine!
+                This machine is ideal for quick service restaurants, hotels, colleges and universities, office
+                buildings, and more.
+                This machine features an easy-to-use touchscreen display that guides the operator through the
+                drink-making process for a consistent product every time.
+                Dual 3.3lb capacity hoppers allow you to serve a variety of espresso beans at a high volume while
+                the
+                machine steams up to 1L of milk in under a minute to serve customers quickly and keep lines moving.
+                This machine features an easy-to-use wand that automatically steams milk to the proper temperature,
+                allowing the operator to focus on other tasks, increasing productivity.
+                A heavy-duty grinder grinds beans quickly and effectively, while a heated stainless steel brew
+                chamber
+                keeps drinks at the perfect temperature.
+                The machine reminds you when it is time to clean and features a lockout function that prevents the
+                machine from operating until it is cleaned,
+                promoting sanitation and preserving drink flavors. A modular design makes maintenance easy and the
+                attractive polished finish is sure to fit any decor.
+                This Bunn espresso machine comes with the Bunn 45961.0000 water conditioning system, so you can be
+                sure
+                that you're putting quality water into your unit and getting quality espresso out of it.
+                This machine requires a 208V electrical connection and includes a cord.<br />
+                <p class="price"> &#36;17,019.00 </p>
+                <label class="form-label" for="productQuantity26"> Quantity: </label><br />
+                <input id="productQuantity26" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId26" type="hidden" name="product_id" value="26" />
+                <input id="productName26" type="hidden" name="product_name" value="Product26" /> <br />
+                <p class="cta" id="addit26"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+            <div class="col productCol">
+                <img src="https://cdnimg.webstaurantstore.com/images/products/large/318553/1609503.jpg"
+                    class="choosingPicture" alt="CoffeeMakerPicture" /> <br />
+                Bunn 44300.0201 Crescendo series espresso machine <br />
+                With the ability to produce up to 40 double shots per hour, this workhorse machine is perfect for
+                high-volume cafes, coffee shops,
+                kiosks, and restaurants that pride themselves on serving quality coffee drinks.
+                You can use this machine to create a single or double espresso shot topped with a beautiful crema,
+                or as
+                the keynote in a signature macchiato, americano, or cafe<br />
+                <p class="price"> &#36;2,939.00 </p>
+                <label class="form-label" for="productQuantity27"> Quantity: </label><br />
+                <input id="productQuantity27" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId27" type="hidden" name="product_id" value="27" />
+                <input id="productName27" type="hidden" name="product_name" value="Product27" /> <br />
+                <p class="cta" id="addit27"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+            <div class="col productCol">
+                <img src="https://cdnimg.webstaurantstore.com/images/products/large/465757/1734813.jpg"
+                    class="choosingPicture" alt="CoffeeMakerPicture" /> <br />
+                Grindmaster Korinto Prime Super Automatic Espresso Machine - 120V, 1500W <br />
+                Provide the freshest espresso drinks with minimum effort by using this Grindmaster Korinto Prime
+                super
+                automatic espresso machine!
+                It is designed to create cafe-quality espresso-based beverages using fresh whole bean coffee. This
+                unit
+                precisely tamps, pre-infuses,
+                and extracts coffee without the need for a highly-trained barista to operate the machine. Not only
+                does
+                this save you expensive training and labor costs,
+                it ensures a high level of consistency no matter who is making drinks at your cafe, restaurant, or
+                hotel!
+
+                This super automatic espresso machine uses one whole bean coffee hopper and two soluble product
+                hoppers
+                to create a selection of up to eight different hot beverages!
+                It can make espressos, cappuccinos, lattes, mochas, and more, all from one machine with just the
+                touch
+                of a button. Since coffee and soluble products are added automatically,
+                portions remain precise and your guests will always receive the flavor profiles they expect.
+
+                Ideal for making up to 80 espressos per hour, this coffee machine features a simple user interface
+                and a
+                backlit touchpad control panel with a large graphic display.
+                The Korinto can be set up to use in self-service mode for a hotel breakfast bar, or you can place it
+                behind the counter in your cafe for staff members to operate.
+                It can dispense beverages in 8 oz., 10 oz., or 12 oz. portions, too, so you can set it to the
+                perfect
+                drink size for your application.
+
+                Sleek and attractive, this compact Korinto coffee machine is a profitable addition to your existing
+                beverage program.
+                It is also perfect if you want to start selling specialty beverages at your restaurant, but don't
+                want
+                to invest in several different pieces of equipment and expensive training for your staff!
+                This coffee machine comes with a water filtration kit. It requires a 120V electrical connection for
+                operation and has an output of 1500W.<br />
+                <p class="price"> &#36;6,009.00 </p>
+                <label class="form-label" for="productQuantity28"> Quantity: </label><br />
+                <input id="productQuantity28" class="input" type="number" name="quantity" min="0" max="1000" />
+                <input id="productId28" type="hidden" name="product_id" value="28" />
+                <input id="productName28" type="hidden" name="product_name" value="Product28" /> <br />
+                <p class="cta" id="addit28"><a class="getstarted-button">Add to Cart!</a></p>
+                <br />
+            </div>
+
+
+
+        </section>
+    </section>
+
+
+
+
+    <button class="ToTheTopOfThisPageButton" onclick="window.location.href='#top';"> <b>Back to the top of this
+            page</b>
+    </button>
+
 
 
     <footer>
-      <p> <small>
-          &copy;2021 Webmaster: Judit Horvath
-        </small>
-      </p>
+        <p> <small>
+                &copy;2021 Webmaster: Judit Horvath
+            </small>
+        </p>
     </footer>
+
 </body>
+
 </html>
