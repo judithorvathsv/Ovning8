@@ -10,7 +10,7 @@
   <title>About US</title>
 
   <style>
-    /************* logo image with text **************************************/
+    /*************logo image up with text**************************************/
     .KaffeCompanyImage {
       height: 100%;
       max-height: 78px;
@@ -25,7 +25,7 @@
       max-width: 750px;
     }
 
-    /************* navigation bar **************************************/
+    /*************navigation bar**************************************/
 
     .list {
       text-align: center;
@@ -48,7 +48,7 @@
             text-decoration: none;
         }
 
-    /************* history section **************************************/
+    /*************history section**************************************/
 
     .title {
       font-family: Monotype Corsiva, Times, Serif;
@@ -72,7 +72,7 @@
 
 
 
-    /************* leader section **************************************/
+    /*************leader section**************************************/
 
     #leaderRow {
       max-width: 600px;
@@ -80,6 +80,7 @@
 
     .leadersOnPicture {
       max-height: 100px;
+      transition: 1s ease-in-out;
     }
 
     .nextLeader {
@@ -87,10 +88,16 @@
       padding-left: 15px;
     }
 
+    #VdPicture:hover{
+      transform: scale(1.5,1.5);
+    }
+
+    #HRPicture:hover{
+      transform: rotateZ(120deg);
+    }
 
 
-/************* footer  section **************************************/
-
+    /***************************************************/
 
     .myfooter {
       padding-top: 20px;
@@ -258,6 +265,8 @@
     /***************************************************/
 
 
+
+
     .FooterSection {
       background-color: rgb(145, 71, 18);
       border-top: 5px solid black;
@@ -273,8 +282,8 @@
   </style>
 
 </head>
+
 <body>
-  
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -285,7 +294,7 @@
 
 
 
-  <!-- Header ----------------------------------------->
+  <!-- responsive Header ----------------------------------------->
 
 
   <div class="container-fluid picture">
@@ -309,7 +318,7 @@
     </div>
   </div>
 
-  <!--  navigation links----------------------------------------->
+  <!-- responsive navigation links----------------------------------------->
 
   <hr>
 
@@ -397,7 +406,7 @@
       <div class="col">
         <img
           src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Al_Bundy_%28Ed_O%27Neill%29.jpg/250px-Al_Bundy_%28Ed_O%27Neill%29.jpg"
-          class="leadersOnPicture" alt="Vd info">
+          class="leadersOnPicture" alt="Vd info" id="VdPicture">
 
         <div class="media-body">
           <h5 class="mt-0">CEO</h5>
@@ -415,7 +424,7 @@
 
       <div class="nextLeader">
         <img src="https://www.toponeliners.com/images/peggy-bundy/peggy-bundy-j1e.jpg" class="leadersOnPicture"
-          alt="HR info">
+          alt="HR info" id="HRPicture">
 
 
         <div class="media-body">
@@ -436,6 +445,11 @@
 
     <br />
     <br />
+
+
+
+
+
 
 
 
